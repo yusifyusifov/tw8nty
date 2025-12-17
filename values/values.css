@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+
+/* Base */
+body {
+  margin: 0;
+  font-family: "Google Sans Flex", sans-serif;
+  background-color: #0f0f0f;
+  color: #f2f2f2;
+}
+
+/* Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(40, 40, 40, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 100;
+}
+.main-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo img {
+  width: 16%;
+  height: auto;
+  margin-top: 1vh;
+}
+.nav-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 10vw;
+}
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+.nav-list a.active,
+.nav-list a:hover {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(40, 40, 40, 0.95);
+  padding: 16px;
+}
+.footer-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.footer-meta {
+  font-size: 12px;
+  color: #a0a0a0;
+}
