@@ -47,11 +47,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.9;
-  transition: opacity 0.4s ease, /* smooth darken */ transform 0.3s ease; /* smooth lift */
+  transition: opacity 0.4s ease, transform 0.3s ease;
 }
 .nav-list a.active,
 .nav-list a:hover {
-  opacity: 0.6; /* darker */
+  opacity: 0.6;
   transform: translateY(-2px);
 }
 
@@ -77,4 +77,95 @@ body {
 .footer-meta {
   font-size: 12px;
   color: #a0a0a0;
+}
+
+/* FAQ Section */
+.faq-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.faq-title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.faq-subtitle {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  margin-bottom: 40px;
+  animation: pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  padding: 28px 28px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 24px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+  content: "−";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 14px;
+  opacity: 0.8;
+  padding: 0 24px;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 8px 0 20px;
 }
