@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: "Google Sans Flex", sans-serif;
-  background-color: #0f0f0f;
+  background-color: #000000;
   color: #f2f2f2;
 }
 
@@ -53,6 +53,111 @@ body {
 .nav-list a:hover {
   opacity: 0.6;
   transform: translateY(-2px);
+}
+
+.values-section {
+  position: relative;
+  padding: 8vh 5vw;
+  padding-bottom: 0;
+  background: url(/images/block_bg.png);
+  color: #fff;
+  background-size: cover;
+}
+
+.values-header {
+  text-align: left;
+  margin-bottom: 6vh;
+}
+.values-title {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+}
+
+.values-subtitle {
+  font-size: 1rem;
+  color: #c0c0c0;
+}
+
+.values-stage {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+/* Block styling */
+/* Bigger blocks */
+.value-block {
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(1px);
+  /*background: url("/images/block_bg.png");*/
+  background-size: cover;
+  background-position: center;
+  z-index: 20;
+}
+
+/* Bigger text */
+.value-title {
+  font-size: 1.4rem; /* was 1rem */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  /* base glow */
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+.value-sub {
+  font-size: 0.95rem; /* was 0.82rem */
+  color: #cfcfcf;
+}
+
+/* Manual layout — mapped from your screenshot */
+#resonance {
+  top: calc(4% - 160px - 14px); /* above Craft */
+  left: calc(6% + 334px * 2); /* same column as Craft */
+}
+#ambition {
+  top: 4%;
+  left: calc(6% + 334px * 1);
+}
+#authenticity {
+  top: 4%;
+  left: calc(6% + 334px * 2);
+}
+
+#innovation {
+  top: calc(4% + 160px + 14px);
+  left: calc(6% + 334px * 0);
+}
+#bold {
+  top: calc(4% + 160px + 14px);
+  left: calc(6% + 334px * 1);
+}
+#legacy {
+  top: calc(4% + 160px + 14px);
+  left: calc(6% + 334px * 2);
+}
+
+#unity {
+  top: calc(4% + (160px + 14px) * 2);
+  left: calc(6% + 334px * 0);
+}
+#vision {
+  top: calc(4% + (160px + 14px) * 2);
+  left: calc(6% + 334px * 1);
 }
 
 /* Footer */

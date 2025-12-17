@@ -108,7 +108,7 @@ body {
   height: 100%;
   object-fit: contain;
   animation: zoomPulse 8s ease-in-out infinite,
-    glowPulse 4s ease-in-out infinite;
+    glowPulse 3s ease-in-out infinite;
 }
 .overlay {
   position: absolute;
