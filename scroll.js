@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.7, // % of block visible before triggering
+      threshold: 0.8, // % of block visible before triggering
     }
   );
 
